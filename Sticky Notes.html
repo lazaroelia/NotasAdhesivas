@@ -1,0 +1,317 @@
+<style >
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:Tahoma, calibri;
+  font-size:100%;
+  margin:3em;
+  /*background: linear-gradient(to right top, #65dfc9, #6cdbeb);; */
+  background-image: url('https://cdn.shopify.com/s/files/1/2592/5368/products/5505_1024x1024.jpg?v=1538491248');
+}
+h2,p {
+  font-size:100%;
+  font-weight:normal;
+}
+ul,li{
+  list-style:none;
+}
+ul{
+  overflow:hidden;
+  padding:3em;
+}
+ul li a{
+  text-decoration:none;
+  color:#000;
+  background:#FADA28;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+ul li{
+  margin:1em;
+  float:left;
+}
+ul li h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:100%;
+}
+ul li a{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+ul li:nth-child(even) a{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+ul li:nth-child(3n) a{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#c0ff0c;
+}
+ul li:nth-child(5n) a{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+ul li a:hover,ul li a:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol li{display:inline;padding-right:1em;}
+ol li a{color:#fff;}
+
+.titulo{
+  font-size:100%;
+  font-weight:bold;
+  padding-bottom:5px;  
+  color: black;
+  width: 165px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.textarea {
+  font-size:100%;
+  font-weight:normal;
+  color: black;
+  width: 165px;
+  height: 110px;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/* BOTON AGREGAR */
+
+#agregar {
+      background: transparent;
+      outline: none;
+      border: 0;
+      font-family: "calibri";
+      text-align: center;
+      padding-right: 5px;
+      margin: 5px 5px;
+
+    }
+    #agregar:hover {
+      background: yellow;
+      color: white;
+    }
+    #agregar:active {
+      background: greenyellow;
+      color: white;
+    }
+
+    /* BARRA DE BUSQUEDA */
+
+    #buscar {
+      height: 30px;
+      width: 500px;
+      background: yellow;
+      outline: none;
+      border: 0;
+      font-family: "calibri";
+    }
+    .container-1 {
+      width: 300px;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: relative;
+    }
+    .container-1 input#buscar {
+      width: 300px;
+      height: 30px;
+      background: yellow;
+      border: none;
+      font-size: 10pt;
+      float: left;
+      color: #blue;
+      padding-left: 45px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-transition: background .55s ease;
+      -moz-transition: background .55s ease;
+      -ms-transition: background .55s ease;
+      -o-transition: background .55s ease;
+      transition: background .55s ease;
+    }
+    .container-1 input#buscar::-webkit-input-placeholder {
+      color: #65737e;
+    }
+    .container-1 input#buscar:-moz-input-placeholder { /* Firefox 18- */
+      color: #65737e;
+    }
+    .container-1 input#buscar::-moz-input-placeholder { /* Firefox 18- */
+      color: #65737e;
+    }
+    .container-1 input#buscar::-ms-input-placeholder {
+      color: #65737e;
+    }
+    .container-1 input#buscar:hover, .container-1 input#buscar:focus, .container-1 input#buscar:active {
+      outline: none;
+      background: #ffffff;
+    }
+    #encabezado {
+      font-family: "calibri";
+    }
+    #eliminar {
+      background: transparent;
+      outline: none;
+      border: none;
+      display: inline-block;
+      padding: 2px 2px;
+      font-size: 8px;
+
+    }
+    #eliminar:hover {
+      background: red;
+      color: white;
+    }
+    #eliminar:active {
+      background: blue;
+      color: white;
+</style>
+
+<!-- BOTON AGREGAR -->
+<div>
+  <button type="submit" id="agregar"><h1>&#43;</h1></button>
+</div>
+<!-- TITULO -->
+<h1 id="encabezado">Notas Adhesivas</h1>
+<!-- BARRA DE BUSQUEDA -->
+<div class="box">
+  <div class="container-1">
+    <input type="search" id="buscar" placeholder="Buscar..."/>
+  </div>
+</div><br><br><br>
+    
+<!-- LAS NOTAS -->
+
+
+<ul id="ul">
+
+  </ul>
+
+<script type="text/javascript">
+  window.onload = iniciar();
+  let nota = document.getElementById("ul");
+
+  function iniciar(){
+    
+    // Boton Agregar eschucha el click
+    var btnAgregar = document.getElementById("agregar");
+    let nota = document.getElementById("ul");
+    btnAgregar.addEventListener("click",notaModelo);
+    nota.addEventListener("click", deleteNota);
+  }
+  function notaModelo(e){
+    e.preventDefault();
+    // AGREGAMOS LA PRIMERA NOTA - elementos creados.
+    var makeUl = document.getElementById("ul");
+    var makeLi = document.createElement("li");
+    var makeA = document.createElement("a");
+    var makeH2 = document.createElement("h2");
+    var makeP = document.createElement("p");
+    var makeInput = document.createElement("input");
+    var makeTextarea = document.createElement("textarea");
+    let btn = document.createElement("button");
+    
+    // AGREGAR FECHA A CADA NOTA
+
+    var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+    var fecha = new Date();
+    let mes = meses[fecha.getMonth()];
+    const dia = fecha.getDate();
+     
+
+
+    // AGREGAMOS SUS ATRIBUTOS - de cada elemento o Node.
+   
+    makeLi.setAttribute("id", "note");
+    makeLi.className = "note";
+    makeA.setAttribute("id", "idA");
+    makeA.setAttribute("href", "#");
+    makeH2.setAttribute("id", "idH2");
+    makeP.setAttribute("id", "idP");
+    makeInput.setAttribute("id", "titulo");
+    makeInput.setAttribute("class", "titulo");
+    makeInput.setAttribute("placeholder", "titulo...");
+    makeInput.setAttribute("maxlength", "13");
+    makeTextarea.setAttribute("id", "textarea");
+    makeTextarea.setAttribute("class", "textarea");
+    makeTextarea.setAttribute("placeholder", "Escribe aqui...");
+    makeTextarea.setAttribute("maxlength", "150");
+    btn.setAttribute("id", "eliminar");
+    btn.setAttribute("class", "eliminar");
+    btn.setAttribute("type", "submit");
+    btn.setAttribute("id", "eliminar");
+    //btn.setAttribute("onclick", "eliminarNota(this)");
+    btn.innerHTML=dia + " de " + mes;
+
+    // JUNTAMOS LOS HIJOS CON SUS PADRES NODES.
+    makeUl.appendChild(makeLi);
+    makeLi.appendChild(makeA);
+    makeA.appendChild(makeH2);
+    makeA.appendChild(makeP);
+    makeH2.appendChild(makeInput);
+    makeP.appendChild(makeTextarea);
+    let agregarBoton = makeP.appendChild(btn);
+    
+    // FUNCION QUE ME ELIMINA TODA LA NOTA -LIMPIA TODO Y ME HACKEA EL APP.
+
+    // btn[1] + makeP[1] + makeA + makeLi
+    //let borrar = document.querySelector("ul").addEventListener("click", (e) => {if(e.target.nodeName === "BUTTON") {e.target.parentNode.parentNode.parentNode.remove();}})
+
+  }
+  
+  /*function eliminarNota(){
+    document.getElementById("note").remove();
+  } */
+  // FUNCION ELIMIAR NOTA
+  function deleteNota(e){
+    if(e.target.classList.contains("eliminar")){
+      var li = e.target.parentElement.parentElement.parentElement;
+      nota.removeChild(li);
+    }
+  }
+</script>
