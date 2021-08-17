@@ -285,7 +285,6 @@ ol li a{color:#fff;}
     btn.setAttribute("class", "eliminar");
     btn.setAttribute("type", "submit");
     btn.setAttribute("id", "eliminar");
-    //btn.setAttribute("onclick", "eliminarNota(this)");
     btn.innerHTML=dia + " de " + mes;
 
     // JUNTAMOS LOS HIJOS CON SUS PADRES NODES.
@@ -296,17 +295,7 @@ ol li a{color:#fff;}
     makeH2.appendChild(makeInput);
     makeP.appendChild(makeTextarea);
     let agregarBoton = makeP.appendChild(btn);
-    
-    // FUNCION QUE ME ELIMINA TODA LA NOTA -LIMPIA TODO Y ME HACKEA EL APP.
-
-    // btn[1] + makeP[1] + makeA + makeLi
-    //let borrar = document.querySelector("ul").addEventListener("click", (e) => {if(e.target.nodeName === "BUTTON") {e.target.parentNode.parentNode.parentNode.remove();}})
-
   }
-  
-  /*function eliminarNota(){
-    document.getElementById("note").remove();
-  } */
   // FUNCION ELIMIAR NOTA
   function deleteNota(e){
     if(e.target.classList.contains("eliminar")){
